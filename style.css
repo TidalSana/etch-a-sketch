@@ -23,7 +23,7 @@ body {
 .flexContainer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
     padding: 50px;
 }
@@ -43,10 +43,10 @@ body {
     box-shadow: 10px 7px 50px 5px rgba(210, 204, 277, 89);
     display: grid;
     border-radius: 5%;
-    margin: auto;
+    margin-right: 20%;
     padding: 1.2%;
     height: 50vh;
-    width: 50%;
+    width: 50vh;
 }
 
 .sliderContainer, 
@@ -55,7 +55,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 1000;
 }
-
 #reset {
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -67,9 +66,11 @@ body {
     background-color: #53537A;
     text-decoration: none;
 }
-
 #userInput {
     font-family: 'Open Sans', sans-serif;
+}
+#gridSlider:hover {
+    cursor: pointer;
 }
 
 .footer {
@@ -98,4 +99,39 @@ body {
     transform: scale(1.2);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Media */ 
+@media only screen and (max-width: 479px) {
+    .header {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .flexContainer {
+        flex-direction: column;
+    }
+    .container {
+        margin: 50px;
+        padding: 30px;
+        width: 35vh;
+    }
+    .footer {
+        bottom: -20%;
+    }
+}
+/* ipad 1 and 2 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .flexContainer {
+        flex-direction: column; 
+        justify-content: space-evenly;
+    }
+    .container {
+        width: 55vh;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .userBar {
+        margin: 10px;
+        padding: 10px;
+    }
 }
