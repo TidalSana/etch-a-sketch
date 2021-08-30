@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch-a-sketch</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body class="bod">
+    <div class="header">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+    <div class="flexContainer">
+        <div class="userBar">  
+            <div class="sliderContainer">
+                <input type="range" min="4" max="100" value="16" id="gridSlider">
+                <p>Grid Size: <span id="userInput"></span></p>
+            </div>
+            <div><button id="reset" class="hvr-bounce-in">Reset</button></div>
+        </div>
+        <div class="container"></div>
+    </div>
+    <footer class="footer">
+        <p>Copyright © 2021 TidalSana</p>
+    </footer>
+</body>
+</html>
